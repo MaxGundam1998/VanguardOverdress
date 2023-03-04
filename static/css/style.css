@@ -1,0 +1,83 @@
+header{
+	background-color: #55d6aa;
+}
+
+header h1{
+	text-align: center;
+}
+
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav{
+	text-align: center;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li{
+	flex-basis: calc(100% /6);
+	text-align: center;
+	display: inline-block;
+	marign-left: 50px
+	paddding-top: 23px
+	
+	position: relative;
+}
+
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover{
+	color: #000;
+}
+
+nav a::before{
+	content: '';
+	display: block;
+	height: 5px;
+	width: 0%;
+	background-color: #000;
+
+	position: absolute;
+	top 0;
+	
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+	width: 0%
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+body{
+	background-image: url('/static/img/vang.jpg');	
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	font-family: 'Work Sans';, sans-serif;
+	font-weight: 300;	
+}
+
+p{
+	font-family: 'Work Sans';
+	font-size: 32px;
+	background-color: #FFFFFF;
+
+}
